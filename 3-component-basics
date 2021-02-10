@@ -1,0 +1,20 @@
+1/ import "component" from react library
+if you are using classes (if you are using functions you don't need component)
+import React { Component } from "react";
+
+2/ create a class that extends "Component"
+
+class <some_name> extends Component{
+
+}
+
+3/ you must (MUST) call the "render" method and return html code:
+render(){
+  return (
+  //return some kind of html component ie'
+  <h1>hi!</h1>
+  )
+}
+
+4/ after the class, at the bottom of the file, export default <name of class>
+it allows other components (index.js) to import it.

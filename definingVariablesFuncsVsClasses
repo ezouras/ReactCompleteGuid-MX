@@ -1,0 +1,12 @@
+class App extends Comonent{
+thisIsAVariable="something";
+console.log(this.thisIsAVariable);
+}
+
+then when you use it in the class, it is referred to "this" or the class
+
+
+
+const someFunc = ()=>{
+const thisIsAVariable="something"
+}

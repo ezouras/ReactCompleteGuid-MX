@@ -1,0 +1,7 @@
+1/ create a folder for the components that has a capitol letter
+2/ use functional compoennts unless you are defning a state
+3/ use the word "props" for passing data to components from parent
+4/ end method with word "handler" if it is hanlding an event
+5/ Create folder for component that starts with capitolr letter
+6/ capitolize first letter of file name for component files:
+Person.js in the "Person" folder

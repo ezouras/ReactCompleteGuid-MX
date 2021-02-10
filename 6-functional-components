@@ -1,0 +1,21 @@
+IN the end, a react component is a function that returns jsx.
+(or html ).  Whether you are using a function or a class, you are using jsx
+
+1/ defining a class component (done when definin state)
+see app.js in one-app folder
+import React, {Component} from 'react';
+class App extends Component{
+render(){
+  return (<div></div>)
+  }
+
+2/ defining a function for a component use the es6 way, an arrow function
+see Person.js in one-app folder
+import React from 'react';
+const person=(props)=>{
+return(
+  <div>
+    <p>I'm a {props.name} </p>
+</div>
+)
+}

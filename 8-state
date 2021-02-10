@@ -1,0 +1,12 @@
+Managed from INSIDE the component
+The magic about state is if it changes, it re-renders
+the dom to reflect the change
+it triggers a UI update
+
+1/ unless you are using "hooks", you only manage states
+within in class components. NOT functional components. HOWEVER,
+you should use functional components as much as passible.
+when using STATE you should do so with care. It can make your
+app unpredictable esp as it grows.
+
+2/

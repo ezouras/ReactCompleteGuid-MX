@@ -1,0 +1,16 @@
+write html-ish code in js files
+
+1/class is a reserved name!!
+ can't use the word "class".  you use it to define a js class.
+instead you use the word "className"
+
+2/you MUST wrap everything up in a SINGLE root component (like a div).
+<div>
+  <h1>hi</h2>
+</div>
+
+3/props.children is reserved!!
+if your passing elements to child component thru props,
+props.children is taken for passing data between the tags!!!
+
+4/ state is a RESERVED word! (for state :)

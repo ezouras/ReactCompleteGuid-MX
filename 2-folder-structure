@@ -1,0 +1,23 @@
+1/ root files:
+package - view dependencies
+you can see the version of react your using
+scripts - how npm start works
+
+3/ public
+index.html
+root folder that gets served by webserver.
+has an html page - you will never add files here
+script files get injected here.
+
+<div id="root"><div> = where react app is mounted
+
+4/ Src - script files
+Your react app is here!!
+index.js = you can see how the 'root' is hooked.
+it says "add the app component to the root"
+app.js - a component.  when you create the app - it's the only
+component it uses.
+
+
+2/ node_modules
+holds dependency code

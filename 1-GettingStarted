@@ -1,0 +1,10 @@
+1/
+>npx create-react-app <name of app>
+or
+>npm init react-app my-app
+npx create-react-app my-app
+https://create-react-app.dev/docs/getting-started/
+install -g create-react-app
+
+2/ cd to new app
+>npm start

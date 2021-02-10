@@ -1,0 +1,24 @@
+Use app.js in "one-app"
+as a reference to the below
+
+1 / when you render() { return (some html code) }
+you are actually calling
+render() { return React.createElement('div') }
+
+2 / createElement method
+takes three arguments
+code be more but at least three
+a / html element
+b / configuration(styling)
+c / any amount of children, can have more than one, they are separtaed
+by comments.Depends how many children are in your class
+
+to pass children, you need to call "React.createElement"
+inside of the parent "React.createElement"
+please see "App.js" in "one-app"
+
+3 /
+  for the 2n d argument, configuratnoi, of the createElement method, you can
+pass { className: '<name of css class>' }
+
+adding multiple children can get very messy, that 's why we use jsx

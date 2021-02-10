@@ -1,0 +1,16 @@
+1/ in html it would be "onclick" => all lower case
+in jsx it is onClick => camel case
+<button onClick={}></button>
+
+2/ name the method so that it ends with "handler" so
+that the user knows that it is a method for an event
+
+switchNameHandler = ()=>{
+
+}
+
+3/ you MUST use "this" when calling the methods
+<button onClick={this.switchNameHandler}></button>
+
+4/ DONT add the parenthesis - it will run it right away
+instead of waiting for a click

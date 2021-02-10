@@ -1,0 +1,23 @@
+props = pass data from the parent calling your component
+managed from OUTSIDE the component. makes the component dynamic
+depdning on what the parent (outside) passes to the component
+
+1/ data is accessed in child component by using an argument to the
+functino.  convention is to name the argument "props"
+const person=(props)=>{
+ return (
+ ...
+
+2/ to pass data from parent within the tag
+  a/ in parent
+  <Person age=10></Person>
+  a/ to access in child, using #1 argument props:
+  {props.age}
+
+2/ to pass data inbetween the tags:
+  a/ in parent
+  <Person>I love to rollerblade!</Person>
+  b/ in child
+  {props.children}
+if there is no content between the tags in the parent,
+it just shows an epty <p></p> in the child
