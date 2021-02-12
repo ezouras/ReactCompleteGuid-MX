@@ -24,3 +24,13 @@ unlike a components
 "setState" IT DOES NOT MERGE - IT
 REPLACES and so you MUST include everything otherwise, it will be
 lost
+
+7/ you can use ternary expressions but not "if" statements in a {} block
+{
+  this.state.showDiv?<div>HI!</div>:null;
+}
+
+YOU CANT DO THIS:
+{ if(this.state.showDiv){
+  <div>you will never see me :(</div>
+}

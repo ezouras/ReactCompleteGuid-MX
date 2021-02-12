@@ -1,0 +1,9 @@
+create 2 components: UseInput / UserOutput
+userinput shoudl hold an input element, useroutput two
+ paragraphs
+output multiple userOUtput components in teh
+appcomponent (any paragraph texts of your choice)
+
+3/ pass a name to useroutput via props and display it
+4/ add a state to represent username to the app.js
+5/ aded a method to manipuate the state
