@@ -1,0 +1,24 @@
+Short Circuit, in logical operations such as "OR", if the first operand is
+true, js wont even look at the 2nd operand.  It "short circuits" it. because.. why not?
+
+let person = {
+  name:"Evie",
+  age:50
+}
+
+console.log(person.job||"unemployed") //unemployed
+since person.job is falsy, unemplyed is printed.
+it will automatically go to the otherside, no matter what it is
+
+1/ in an or operation, if the first side is false, it will ALWAYS print the right.
+2/ in an OR operatnoi if the first side is true, it will always print the first side.
+
+3/ using short circuit in React// Short circuit operator
+const Counter = ({count}) => {
+  return <div>
+    {count && <h1>Count: {count}</h1>}
+  </div>
+}
+
+a/ if count is true, use the right side of the && operand
+b/ if the count is falsy (undefined), dont do anything

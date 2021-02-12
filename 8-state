@@ -9,4 +9,9 @@ you should use functional components as much as passible.
 when using STATE you should do so with care. It can make your
 app unpredictable esp as it grows.
 
-2/
+2/There is a difference between
+setState = used in components, merges with an existing object
+state = a reserved word in the React library (not sure if
+it is only with components) that is used with SetState
+
+useState = used by function when importing "hooks", REPLACES the old state

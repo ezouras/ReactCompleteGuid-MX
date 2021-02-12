@@ -5,3 +5,15 @@
 5/ Create folder for component that starts with capitolr letter
 6/ capitolize first letter of file name for component files:
 Person.js in the "Person" folder
+7/ pass objects as props instead of primitives
+// Don't pass primatives
+<UserAccount
+  name={user.name}
+  email={user.email}
+  id={user.id}
+/>
+
+// Pass objects
+<UserAccount user={user} />
+
+8/ short circuit and destructue (see files 11 and 12)

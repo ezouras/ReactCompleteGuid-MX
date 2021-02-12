@@ -16,5 +16,6 @@ render(){
   )
 }
 
-4/ after the class, at the bottom of the file, export default <name of class>
+4/ after the class, at the bottom of the file, export
+default <name of class>
 it allows other components (index.js) to import it.

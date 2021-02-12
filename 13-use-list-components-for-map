@@ -1,0 +1,23 @@
+// Don't write lops with the rest of the code
+const Component = ({title, cards}) => {
+  return <div>
+    <h1>{title}</h1>
+    {
+      cards.map(({title = default_cardTitle, subtitle, image}) => ({
+        <div>
+          <h3>{cardTitle}</h3>
+          <h5>{subtitle}</h5>
+          <img src={image} />
+        </div>
+      }))
+    }
+  </div>
+}
+
+// Break it up into a separate list component
+const Component = ({title, cards}) => {
+  return <div>
+    <h1>{title}</h1>
+    <CardsList cards={cards} />
+  </div>
+}

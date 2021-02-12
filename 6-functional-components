@@ -1,5 +1,6 @@
 IN the end, a react component is a function that returns jsx.
-(or html ).  Whether you are using a function or a class, you are using jsx
+(or html ).  Whether you are using a function or a class, you are
+ using jsx
 
 1/ defining a class component (done when definin state)
 see app.js in one-app folder

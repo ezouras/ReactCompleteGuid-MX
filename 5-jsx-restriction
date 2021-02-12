@@ -14,3 +14,13 @@ if your passing elements to child component thru props,
 props.children is taken for passing data between the tags!!!
 
 4/ state is a RESERVED word! (for state :)
+
+5/ setState is a RESERVED method by the Component library
+(why you need components instead of functions to set the state).
+if you want the dom to react to your changes, you must use setState
+
+6/ the "useState" method is defined by react when importing hooks.
+unlike a components
+"setState" IT DOES NOT MERGE - IT
+REPLACES and so you MUST include everything otherwise, it will be
+lost

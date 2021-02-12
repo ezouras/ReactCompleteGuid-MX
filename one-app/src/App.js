@@ -1,11 +1,8 @@
-//for the react.createElement methd ot work, need to import react
 import React, {Component} from 'react';
 import './App.css';
-//the name could be anything. and it should be uppercase
 import Person from "./Person/Person"
 
 class App extends Component{
-  //state data could be anything you want
   state = {
       persons:[
         {name: "Max", age:28},
@@ -13,28 +10,60 @@ class App extends Component{
       ]
   }
 
-  switchNameHandler=()=>{
+  switchNameHandler=(newName)=>{
     console.log("button clicked!")
-  }
+  this.setState(
+  {
+    persons:[
+      {name: newName, age:28},
+      {name:"Stefanie",age:57}
+    ]})}
+
+nameChangeHandler=(event)=>{
+  this.setState(
+  {
+    persons:[
+      {name: "Max", age:28},
+      {name:event.target.value,age:57}
+    ]})}
+
   render(){
+    //this is js, values need to be strings
+    //this is just a normal js const
+    const style={
+      backgroundColor:'white',
+      font:"inherit",
+      border:'1px solid blue',
+      padding:'8px',
+      cursor:'pointer'
+    }
     return (
     <div className ="App">
       <h1> Hi, I'm a react app!</h1>
-      <button onClick={this.switchNameHandler}>switch name</button>
-      <Person name={this.state.persons[0].name} age={this.state.persons[0].age}></Person>
-      <Person name="Julie" pet="dog"></Person>
-      <Person name="Grant" pet="cat"></Person>
-      <Person name="Alethea" pet="giraffe">My hobby is math!</Person>
+      <button
+        style={style}
+        onClick={()=>this.switchNameHandler("Nicky")}>switch name</button>
+      <Person
+        name={this.state.persons[0].name}
+        age={this.state.persons[0].age}>
+      </Person>
+      <Person
+        name="Julie"
+        pet="dog">
+      </Person>
+      <Person
+        name={this.state.persons[1].name}
+        pet={this.state.persons[1].age}>
+      </Person>
+      <Person name="Alethea"
+        pet="giraffe"
+        changeNameHandler={this.switchNameHandler.bind(this,"Nicole!")}
+        nameEnteredHandler={this.nameChangeHandler}
+        >My hobby is math!</Person>
       <Person name="Cyndi" pet="lizard"></Person>
     </div>
   );
 }
-  //the above is really calling the below (see jsx file in the root folder)
-  //return React.createElement("div",null,"h1","Hi, I\'m a react app!")
-  //return React.createElement("div",null,React.createElement("h1",null,"Hi, I\'m a react app!"));
-  //adding style to the above:
-
-  //return React.createElement("div",{className:'app'},React.createElement("h1",null,"Hi, I\'m a react app!"));
 
 }
 

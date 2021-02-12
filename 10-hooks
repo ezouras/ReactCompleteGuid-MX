@@ -1,0 +1,70 @@
+1/ import "useState"
+import React, {useState} from 'react';
+
+2/ pass the method
+useState();
+
+an object representing the state:
+useState(
+  {
+      persons:[
+        {name: "Max", age:28},
+        {name:"Stefanie",age:57}
+      ]
+  }
+
+)
+
+3/ ALWAYS returns an array with two items
+const stateArr = useState(
+    {
+        persons:[
+          {name: "Max", age:28},
+          {name:"Stefanie",age:57}
+        ]
+    }
+
+  )
+
+  using destructuring:
+  const [personState, setPerson] =  useState(
+      {
+          persons:[
+            {name: "Max", age:28},
+            {name:"Stefanie",age:57}
+          ]
+      }
+
+  )
+a/ first index, the current state.
+b/ the function to update the state
+
+4/** warning!!
+there is a difference between "SetState" and "UseState"
+
+The "state" that is used in "App-ComponentVersion"
+is just an object that we are using. but the word "STATE"
+is a reserved word that identifies it as something to be used
+in conjunction with "setState" for react Components
+
+"setState" is a React method for React COMPONENTS that
+MERGES int the existing object
+
+the "useState" a React method for functions when importing "hooks".
+IT DOES NOT MERGE - IT
+REPLACES and so you MUST include everything otherwise, it will be
+lost
+
+5/ you can have multiple "useState" hooks so you don't have to deal with large
+replacing states.
+const [personState,setPersonState]=useState({
+persons:[
+{name:Evie,age:50},
+{name:george,age:17}
+]
+})
+
+//you don't need to pass an object to setState
+const [otherState,setOtherState]=setState("someother state")
+
+now when you call "setPersonState", otherstate remains the same. 

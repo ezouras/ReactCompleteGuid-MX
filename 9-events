@@ -1,3 +1,5 @@
+https://reactjs.org/docs/events.html
+
 1/ in html it would be "onclick" => all lower case
 in jsx it is onClick => camel case
 <button onClick={}></button>

@@ -1,0 +1,20 @@
+1/ Destructure Props Object values
+// old:
+const Input = (props) => {
+  return <input value={props.value} onChange={props.onChange}/>
+}
+
+// new :)
+const Input = ({value, onChange}) => (
+  <input value={value} onChange={onChange} />
+)
+
+2/ put default properties inside of the destructuring.
+if the properties below are falsy, they now have values. 
+const Component = ({
+  title: 'Default Title',
+  subtitle: 'Generic Subtitle',
+  text: '',
+}) => {
+  return <div>...</div>
+}
