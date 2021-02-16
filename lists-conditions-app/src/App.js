@@ -14,6 +14,7 @@ class App extends Component{
 
 
 nameChangeHandler=(id,e)=>{
+  //persons is an array ; it is what map returns
   let persons=[...this.state.persons].map(person=>{
     if(person.id===id){
       person.name = e.target.value;
@@ -22,7 +23,7 @@ nameChangeHandler=(id,e)=>{
   });
   //persons remove old person, add new person
 
-
+//the state value for persons is an array; we replace it with another one 
   this.setState({persons:persons})
 }
 
